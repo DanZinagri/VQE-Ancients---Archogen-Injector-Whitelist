@@ -1,4 +1,4 @@
-# VQE Ancients - Archogen Injector Whitelist
+# VQE Ancients - Archogen Injector Whitelist (tldr basically unchanged from its TMM version it just got a fancy config menu)
 
 Choose which genes Vanilla Quests Expanded - Ancients' archogen injector can give. RimWorld 1.7 only.
 
