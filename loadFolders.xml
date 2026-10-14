@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<loadFolders>
+	<v1.7>
+		<li>/</li>
+		<!-- The DLL references VQE - Ancients' types, so it only loads when that mod is active. -->
+		<li IfModActive="vanillaquestsexpanded.ancients">1.7</li>
+	</v1.7>
+</loadFolders>

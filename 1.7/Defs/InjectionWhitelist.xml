@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+		The default whitelist: the only genes VQE - Ancients' archogen injector and experiment pawns can roll, unless the
+		player changes the selection in the mod settings.
+		- The first block is the reward pool: Ancients' own archite genes, plus Alpha Genes' super-adaptive biology.
+		- The rest are side effects: drawback genes with a positive metabolism value, from vanilla and other gene mods.
+		- Entries are gene defNames. A gene that is not loaded is skipped, and MayRequire works on each entry.
+		- A listed gene is allowed even if Ancients' own rules would reject it (its InjectionBlacklistDef and so on).
+		- To extend the defaults, add another InjectionWhitelistDef: all loaded lists are merged. To change or replace them,
+		  patch this def.
+		The list is Too Many Mods' original and has not been checked against current gene mods.
+	-->
+	<ArchogenInjectorWhitelist.InjectionWhitelistDef>
+		<defName>ArchogenInjectorWhitelist_Default</defName>
+		<genes>
+			<li>VQEA_Herculean</li>
+			<li>VQEA_Prowess</li>
+			<li>VQEA_BlurRunner</li>
+			<li>VQEA_Woundless</li>
+			<li>VQEA_Marksman</li>
+			<li>VQEA_PerfectVision</li>
+			<li>VQEA_PlasteelSkin</li>
+			<li>VQEA_PlasteelClaws</li>
+			<li>VQEA_Genius</li>
+			<li>VQEA_Levitation</li>
+			<li>VQEA_Serene</li>
+			<li>VQEA_PassiveMeditation</li>
+			<li>VQEA_Bulwark</li>
+			<li>VQEA_Enormous</li>
+			<li>VQEA_SubstanceImpervious</li>
+			<li>VQEA_MasterfulAnimals</li>
+			<li>VQEA_MasterfulArtistic</li>
+			<li>VQEA_MasterfulConstruction</li>
+			<li>VQEA_MasterfulCooking</li>
+			<li>VQEA_MasterfulCrafting</li>
+			<li>VQEA_MasterfulMedical</li>
+			<li>VQEA_MasterfulMelee</li>
+			<li>VQEA_MasterfulMining</li>
+			<li>VQEA_MasterfulPlants</li>
+			<li>VQEA_MasterfulIntellectual</li>
+			<li>VQEA_MasterfulShooting</li>
+			<li>VQEA_MasterfulSocial</li>
+			<li>VQEA_InfernoSpew</li>
+			<li>VQEA_HellsphereBlast</li>
+			<li>VQEA_Invisibility</li>
+			<li>VQEA_SelfRepairingTissue</li>
+			<li>VQEA_Electromagnetized</li>
+			<li>VQEA_MatterPhasing</li>
+			<li MayRequire="sarg.alphagenes">AG_SuperAdaptiveBiology</li>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>PsychicAbility_Dull</li>
+			<li>Learning_Slow</li>
+			<li>Mood_Pessimist</li>
+			<li>Mood_Depressive</li>
+			<li>VerySleepy</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeTerrible_Melee</li>
+			<li>AptitudePoor_Shooting</li>
+			<li>AptitudePoor_Melee</li>
+			<li>MeleeDamage_Weak</li>
+			<li>FireWeakness</li>
+			<li>FireTerror</li>
+			<li>Pain_Extra</li>
+			<li>Nearsighted</li>
+			<li>Aggression_Aggressive</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>ChemicalDependency_Smokeleaf</li>
+			<li>Immunity_Weak</li>
+			<li MayRequire="sarg.alphagenes">AG_UnstableMutationCatastrophic</li>
+			<li MayRequire="sarg.alphagenes">AG_UnstableMutationMajor</li>
+			<li MayRequire="sarg.alphagenes">AG_FrostbiteVulnerability</li>
+			<li MayRequire="sarg.alphagenes">AG_Gene_VeryWeakImmunity</li>
+			<li MayRequire="sarg.alphagenes">AG_Sensitivity_Vicious</li>
+			<li MayRequire="sarg.alphagenes">AG_Sensitivity_Lethal</li>
+			<li MayRequire="sarg.alphagenes">AG_Teratogenesis</li>
+			<li MayRequire="sarg.alphagenes">AG_VolatileMood</li>
+			<li MayRequire="sarg.alphagenes">AG_Thalassophobia</li>
+			<li MayRequire="sarg.alphagenes">AG_FireObsession</li>
+			<li MayRequire="sarg.alphagenes">AG_BrittleBones</li>
+			<li MayRequire="sarg.alphagenes">AG_FrailSkin</li>
+			<li MayRequire="sarg.alphagenes">AG_HeatSlowness</li>
+			<li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_BulletVulnerability</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_VeryDelicate</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_CannotWearArmor</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_CannotWearClothing</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Very_Slow</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_UnarmedOnly</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_NoEquip</li>
+			<li MayRequire="RedMattis.BigSmall.Core">WoundHealing_VerySlow</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_AcidWeakness</li>
+			<li MayRequire="RedMattis.BigSmall.Core">MinTemp_HugeNeed</li>
+			<li MayRequire="RedMattis.BigSmall.Core">MaxTemp_HugeNeed</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SimpleMind</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_VerySimpleMind</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_Coward</li>
+			<li MayRequire="ElSov.Highborn">HBX_Haughty</li>
+			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Sensitivity_Dangerous</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Hemophiliac</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Immunity_VeryWeak</li>
+			<li MayRequire="V.Rooboid.Faun">RBSF_Myotonia</li>
+			<li MayRequire="V.Rooboid.Faun">RBSF_Mechanophobia</li>
+			<li MayRequire="tug.Satyr">RBSF_Uncouth</li>
+			<li MayRequire="Sov.Tenmo">GS_EMP_Weakness</li>
+			<li MayRequire="vanillaracesexpanded.archon">VRE_ExtremelyAggressive</li>
+			<li MayRequire="vanillaracesexpanded.archon">VRE_SlowShooter</li>
+			<li MayRequire="vanillaracesexpanded.archon">VRE_SlowMeleeHitter</li>
+			<li MayRequire="vanillaracesexpanded.archon">VRE_Maniac</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+			<li MayRequire="det.brawnum">DV_Melee_Slow</li>
+			<li MayRequire="det.keshig">DV_DodgeChance_Low</li>
+			<li MayRequire="det.halffoot">DV_Pushover</li>
+			<li MayRequire="det.halffoot">DV_Aggression_Hotheaded</li>
+			<li MayRequire="VexedTrees980.RimElvesBiotech">RE_ChemicalSusceptibility</li>
+			<li MayRequire="VexedTrees980.RimElvesBiotech">RE_MentalFanaticism</li>
+		</genes>
+	</ArchogenInjectorWhitelist.InjectionWhitelistDef>
+
+</Defs>
