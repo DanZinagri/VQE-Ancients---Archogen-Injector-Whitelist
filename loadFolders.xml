@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <loadFolders>
+	<!-- Common holds the default list, shared by both versions. Both folders need VQE - Ancients: the DLL references
+	     Ancients' types, and the default list's def type lives in the DLL. -->
+	<v1.6>
+		<li>/</li>
+		<li IfModActive="vanillaquestsexpanded.ancients">Common</li>
+		<li IfModActive="vanillaquestsexpanded.ancients">1.6</li>
+	</v1.6>
 	<v1.7>
 		<li>/</li>
-		<!-- The DLL references VQE - Ancients' types, so it only loads when that mod is active. -->
+		<li IfModActive="vanillaquestsexpanded.ancients">Common</li>
 		<li IfModActive="vanillaquestsexpanded.ancients">1.7</li>
 	</v1.7>
 </loadFolders>

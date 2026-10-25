@@ -4,17 +4,10 @@
 	<author>DanZinagri</author>
 	<packageId>DanZinagri.VQEAncients.ArchogenInjectorWhitelist</packageId>
 	<supportedVersions>
+		<li>1.6</li>
 		<li>1.7</li>
 	</supportedVersions>
-	<description>Choose which genes Vanilla Quests Expanded - Ancients' archogen injector can give.
-
-The archogen injector rewards a pawn with a random archite gene and saddles them with a random side-effect gene, and the Ancients' experiment pawns are generated the same way. Both are picked from every loaded gene mod, so with a big gene list the reward can be any other mod's archite gene and the side effect can be almost anything.
-
-With this mod only a curated default list can be rolled: Ancients' own archite genes as the reward, and a set of real drawback genes as side effects. Every gene the injector could give is listed in the mod settings with a search box and a tick box per gene, so you can allow more or remove ones the defaults allow. Changes apply straight away; no restart needed.
-
-The default list is an XML def (ArchogenInjectorWhitelist.InjectionWhitelistDef), so other mods can add their own list or patch this one.
-
-Originally part of Too Many Mods - Compats and Rebalances by Warachia.</description>
+	<description>Choose which genes the archogen injector can give.</description>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
